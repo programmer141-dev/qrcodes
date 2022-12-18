@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mid">
+            <div class="list">
+                <li class="link focus">General information</li>
+            </div>
+            <div class="title">General Information</div>
+            <form action="/genQr" class="form" method="post">
+                <div class="wrapper">
+                    <lable class="lab">House holder name</lable>
+                    <input type="text" class="inp" required name="user">
+                </div>
+                <div class="wrapper">
+                    <lable class="lab">Phone</lable>
+                    <input type="text" class="inp" required name="phone">
+                </div>
+                <div class="wrapper">
+                    <lable class="lab">Location details</lable>
+                    <div class="inputs">
+                        <input type="text" class="inp" required id="long" name="long">
+                        <input type="text" class="inp" required id="latit" name="latit">
+                    </div>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
